@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AirCheck</string>
+
+    <string name="search">Search</string>
+    <string name="go">Go</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="incorrect_login">Incorrect login</string>
+    <string name="incorrect_password">Incorrect password</string>
+</resources>

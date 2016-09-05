@@ -1,0 +1,30 @@
+package ua.cooperbroth.aircheck.dagger.components;
+
+import com.google.gson.Gson;
+
+import dagger.Component;
+import okhttp3.Cache;
+import okhttp3.OkHttpClient;
+import retrofit2.Retrofit;
+import ua.cooperbroth.aircheck.dagger.NetScope;
+import ua.cooperbroth.aircheck.dagger.module.NetModule;
+/**
+ * @author Stas
+ * @since 23.04.16.
+ */
+@NetScope
+@Component(
+        dependencies = AppComponent.class,
+        modules = NetModule.class
+)
+public interface NetComponent extends AppComponent {
+
+    Retrofit getRetrofit();
+
+    OkHttpClient getOkHttpClient();
+
+    Cache getCache();
+
+    Gson getGson();
+
+}
